@@ -1,0 +1,11 @@
+{
+  "f1_score": 0.0014,
+  "valid_samples": 2000,
+  "invalid_samples": 0,
+  "confusion_matrix": {
+    "tn": 529,
+    "fp": 502,
+    "fn": 968,
+    "tp": 1
+  }
+}

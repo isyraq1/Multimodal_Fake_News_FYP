@@ -1,0 +1,6 @@
+model,f1_score,valid_samples,invalid_samples,tp,fp,fn,tn
+hamzab-roberta-fake-news-classification,1.0,2000,0,969,0,0,1031
+jy46604790-Fake-News-Bert-Detect,1.0,2000,0,969,0,0,1031
+elozano-bert-base-cased-fake-news,0.9995,2000,0,968,0,1,1031
+Arko007-fake-news-roberta-5M,0.9964,2000,0,969,7,0,1024
+mrm8488-bert-tiny-finetuned-fake-news-detection,0.0014,2000,0,1,502,968,529

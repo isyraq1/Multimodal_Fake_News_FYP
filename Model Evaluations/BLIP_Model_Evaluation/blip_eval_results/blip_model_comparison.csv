@@ -1,0 +1,6 @@
+model,roc_auc,avg_precision,valid_samples,invalid_samples,tp,fp,fn,tn
+Salesforce-blip-itm-large-flickr,0.7654,0.7677,2000,0,651,235,349,765
+Salesforce-blip-itm-base-coco,0.7632,0.7653,2000,0,771,383,229,617
+Salesforce-blip2-itm-vit-g-coco,0.7624,0.7258,2000,0,0,0,1000,1000
+Salesforce-blip-itm-large-coco,0.7612,0.7662,2000,0,715,297,285,703
+Salesforce-blip-itm-base-flickr,0.6148,0.6293,2000,0,979,913,21,87

@@ -1,0 +1,12 @@
+{
+  "roc_auc": 0.7612,
+  "avg_precision": 0.7662,
+  "valid_samples": 2000,
+  "invalid_samples": 0,
+  "confusion_matrix": {
+    "tn": 703,
+    "fp": 297,
+    "fn": 285,
+    "tp": 715
+  }
+}

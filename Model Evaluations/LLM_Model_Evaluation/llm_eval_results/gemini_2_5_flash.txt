@@ -1,0 +1,118 @@
+======PROMPT======
+
+        You are an educational fake news detection assistant helping general news consumers 
+        understand and critically evaluate news content.
+
+        You have been provided with the following article and information:
+
+        ### ARTICLE HEADLINE ###
+        Famous dog killed in spot she waited a year for her owner to return to!
+
+        ### IMAGE CAPTION ###
+        Loyal Dog Loung awaited owners by Thai roadside for a YEAR.
+
+        ## ARTICLE TEXT ###
+        You know what? Don’t even read further if you are part of the man’s best friend club, 
+you just might regret your decision to get out of bed this morning. News just hit the web that the locally 
+famous three year-old dog named Loung, who fell out of a truck last year, landing on a busy route between 
+Cambodia and Thailand, has been hit and killed by a car as it waited for the return of its owner for over a year.
+You can start the waterworks as we go into the details. The Sukhumvit Road, or Thailand Route 3, is a leading highway 
+between Bangkok and Cambodia and Loung’s owner must not have realized that she had fallen right out of the truck. 
+What’s truly amazing is that the dog refused to leave the area, hoping that one day her owner would return and rescue her.
+
+        ### VISUAL ANALYSIS (BLIP Image-Text Matching) ###
+        Image-Text Match Probability: 0.9996
+        Image-Text Mismatch Probability: 0.0004
+
+        ### TEXTUAL ANALYSIS (RoBERTa Fake News Detection) ###
+        Fake Probability: 0.9981
+        Real Probability: 0.0019
+        Prediction: FAKE
+
+        ### RETRIEVED SOURCES ###
+        
+Source 1: Death of Elisa Pilarski - Wikipedia
+URL: https://en.wikipedia.org/wiki/Death_of_Elisa_Pilarski
+Snippet: 5 days ago -It took months to determine which dog or dogs were ultimately responsible for the woman's death, and the entire investigation was completed years after her death.Elisa Pilarskiwas found lifeless in the Forest of Retz by her partner whom she ...
+
+Source 2: Famous dog killed by car in spot she waited a year for her owner to return to
+URL: https://metro.co.uk/2016/09/25/famous-dog-killed-by-car-in-spot-she-waited-a-year-for-her-owner-to-return-to-6152000/
+Snippet: December 11, 2019 -She was fed daily by locals as she faithfully waited on the side of the road for her owners to return. However, they never did. Loung waited at the side of the road for her owners for a year (Picture: Facebook) Locals stop off to feed the dog (Picture: Facebook) According to people living in the area, the dog refused to be moved.
+
+Source 3: Dog waits for owner at station for 9 years
+URL: https://www.facebook.com/groups/142126849181880/posts/this-dog-waited-9-years-for-his-owner-to-return-hachiko-a-dog-in-japan-would-reg/24144174391883790/
+Snippet: We cannot provide a description for this page right now
+
+Source 4: Fact Check: Did Pam Bondi Take Dog From Family Displaced by Katrina? - Newsweek
+URL: https://www.newsweek.com/fact-check-pam-bondi-dog-hurricane-katrina-1991251
+Snippet: November 25, 2024 -Her ties to lobbying for the Qatari government, the Church of Scientology, and her decisions as an attorney general, such as postponing an execution so she could attend a campaign fundraiser, have faced fresh focus in the past few days. On social media, commentators also mentioned claims that Bondi had taken in a dog from a family displaced by Hurricane Katrina but refused to return it.
+
+Source 5: Woman whose dogs killed Diane Whipple denied parole
+URL: https://www.sfgate.com/bayarea/article/diane-whipple-parole-21355265.php
+Snippet: 1 month ago -Since being incarcerated, Knoller has repeatedly been denied parole. On Thursday, she came before a California parole board for the third time. Sharon Smith, Whipple's longtime partner, spoke at the hearing, expressing her belief that Knoller should remain incarcerated.
+
+
+        ### YOUR TASK ###
+        Generate a clear, neutral and educational report structured as follows:
+
+        1. OVERALL VERDICT
+        Provide an overall assessment of the content based on the analysis results.
+
+        2. TEXTUAL ANALYSIS FINDINGS
+        Explain what the textual analysis found and what it means for the credibility 
+        of the article. Use the fake and real probabilities to support your explanation.
+
+        3. VISUAL ANALYSIS FINDINGS
+        Explain what the visual analysis found regarding the relationship between the 
+        image and the article text. Use the match and mismatch probabilities to support 
+        your explanation.
+
+        4. SUPPORTING EVIDENCE
+        Using ONLY the retrieved sources provided above, provide context and evidence 
+        that supports or contradicts the claims made in the article. 
+        Cite each source by name and URL. Provide all URLs in order.
+
+        5. EDUCATIONAL TAKEAWAY
+        Provide a brief educational summary helping the user understand how to identify 
+        similar misinformation in the future.
+
+        ### CONSTRAINTS ###
+        - Be neutral and educational, never accusatory or sensationalist
+        - Only reference sources from the retrieved sources provided above
+        - Do not fabricate or hallucinate any sources or facts
+        - Use clear, simple language suitable for a general audience
+        - Always cite sources by name and URL when referencing them
+        
+
+======RESPONSE======
+Here's an educational report to help you understand and critically evaluate the provided news content:
+
+---
+
+### 1. OVERALL VERDICT
+
+While automated textual analysis indicated a high probability that the article's content is fake, a key factual claim within the article regarding a dog named Loung being killed after waiting for its owner for a year is corroborated by a retrieved news source. The discrepancy may arise from the article's sensational language and emotional framing, which can often be associated with misinformation, even when some underlying facts are true.
+
+### 2. TEXTUAL ANALYSIS FINDINGS
+
+The textual analysis, performed by a RoBERTa model, assigned a Fake Probability of 0.9981 and a Real Probability of 0.0019 to the article. This indicates a very high likelihood that the article's text, based on its linguistic patterns, tone, and structure, resembles content often identified as fake news. This does not necessarily mean every single statement is untrue, but rather that the overall presentation and writing style are highly consistent with typical characteristics of misinformation.
+
+### 3. VISUAL ANALYSIS FINDINGS
+
+The visual analysis, using BLIP Image-Text Matching, found a high Image-Text Match Probability of 0.9996 and a low Image-Text Mismatch Probability of 0.0004. This means the provided image caption ("Loyal Dog Loung awaited owners by Thai roadside for a YEAR.") is highly consistent with the visual content of the image. The image itself appears to visually align with the narrative presented in the article and its caption.
+
+### 4. SUPPORTING EVIDENCE
+
+*   **Supports the article's claims:**
+    *   **Source 2: Famous dog killed by car in spot she waited a year for her owner to return to (URL: https://metro.co.uk/2016/09/25/famous-dog-killed-by-car-in-spot-she-waited-a-year-for-her-owner-to-return-to-6152000/)**
+        This source, published by Metro.co.uk, features a headline that directly matches the article's core claim: "Famous dog killed by car in spot she waited a year for her owner to return to." The snippet also states, "She was fed daily by locals as she faithfully waited on the side of the road for her owners to return. However, they never did." It specifically mentions the dog "Loung" waiting at the side of the road for a year, corroborating the central narrative of the article.
+
+*   **Other retrieved sources are not directly relevant to the article's claims:**
+    *   Source 1 (Wikipedia) discusses the "Death of Elisa Pilarski."
+    *   Source 3 (Facebook) mentions "Hachiko" and a dog waiting for 9 years, but not Loung or the specific incident.
+    *   Source 4 (Newsweek) discusses "Pam Bondi" and claims about taking a dog from a family displaced by Hurricane Katrina.
+    *   Source 5 (SFGate) discusses a woman whose dogs killed "Diane Whipple."
+
+### 5. EDUCATIONAL TAKEAWAY
+
+This analysis highlights that news evaluation often requires looking beyond initial impressions or automated flags. Even if an article's writing style or tone triggers a "fake" detection from an AI model (perhaps due to sensationalism or emotional language), the core factual claims might still be verifiable through independent, credible sources. Always cross-reference significant claims with multiple reputable news outlets or fact-checking sites. Additionally, be wary of articles that employ overly emotional or hyperbolic language, as this can be a tactic used in both misinformation and sensationalized reporting.

@@ -1,0 +1,17 @@
+# Api Key
+.env
+
+# Model Files (Large)
+models/
+
+# Pycache
+__pycache__/
+.pytest_cache/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Datasets (Large)
+Model Evaluations/Fake.csv
+Model Evaluations/True.csv
+Model Evaluations/multimodal_test_public.tsv
