@@ -1,0 +1,16 @@
+# All required packages for the application and evaluation
+streamlit
+pillow
+python-dotenv
+transformers
+torch
+ddgs
+mistralai==1.2.0
+groq
+google-genai
+pytest
+regex
+pandas
+numpy
+tqdm
+scikit-learn
