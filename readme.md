@@ -12,6 +12,7 @@ A web-based application that unifies pre-trained AI models to detect and educate
 ---
 
 ## Main Project Structure
+```
 ├ app.py                        Main Streamlit application
 ├ .env                          API keys (included in .gitignore)
 ├ requirements.txt              Python dependencies
@@ -28,6 +29,7 @@ A web-based application that unifies pre-trained AI models to detect and educate
 ├ scripts/
 │   └ model_download.py         Script to download required models
 └ Model Evaluations/
+```
 
 **Please Refer to the Readme.md File in Model Evaluations for Evaluations**
 

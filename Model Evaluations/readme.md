@@ -6,7 +6,7 @@ for three pipeline components of BLIP visual analysis, BERT/RoBERTa textual anal
 and LLM report generation.
 
 ## Folder Structure
-
+```
 Model Evaluations/
 ├ BLIP_Model_Evaluation/       BLIP evaluation notebook and results
 │   ├ blip_eval_results
@@ -18,7 +18,7 @@ Model Evaluations/
 │   ├ fakenews.jpg             Test image used for evaluation
 │   └ llm_eval_results/        Generated LLM responses
 └ readme.md
-
+```
 ---
 
 ## Datasets
